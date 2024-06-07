@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.ingredients{
+    color: rgb(255, 255, 255);
+    background: rgb(141, 148, 120);
+    grid-area: ingredients;
+}
+
+.directions{   
+    padding: 0;
+    grid-area: directions;
+}
+.directions h2{
+    background: rgb(141, 148, 120);
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+.nutrition{
+    background: rgb(249, 249, 231);
+    grid-area: nutrition;
+}
+
+.nutrition h2{
+    color: rgb(141, 148, 120);
+}
+
+
+ul span{
+    display: block;
+    padding: 1rem;
+}
+
+
+.ingredients p{
+    font-weight: bold;
+    margin-left: 100px;
+    word-spacing: 20px;
+    text-decoration: underline;
+}
+
+img{
+    width: 3000px;
+    height: 537px;
+    object-fit: cover;
+    object-position: 100% 29%
+}
+
+nav{
+    background: rgb(141, 148, 120);
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li{
+    margin: 1px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    background: rgb(141, 148, 120);
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background: rgb(104, 91, 44);
+    color: #51b23e;
+}
+
+
+/* css grid work */
+
+main{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "ingredients  directions     directions "
+    "ingredients  nutrition      nutrition   "
+    ;
+    grid-gap: 5px 0px;
+}
+
+
+.nutrition ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    left: 15%;
+}
+
+
+.nutrition ul li{
+    border: 1px solid; 
+    margin: 5px;
+    display: inline-block;
+}
+
+.nutrition ul span{
+    display: block;
+    padding: 1rem;
+    border-top: 1px solid;
+    text-align: center;
+}
+
+.nutrition ul span:nth-of-type(1){
+    background: #ddd;
+}
